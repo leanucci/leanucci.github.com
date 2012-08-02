@@ -1,28 +1,42 @@
 <!DOCTYPE HTML>
+<html lang="en" ng-app>
 <head>
   <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/base.css" />
+  <script src="js/angular-1.0.1.js"></script>
+  <script src="js/controller.js"></script>
+  <meta name="name" content="content">
 </head>
-<html>
-  <body>
-    <div class="row">
-      <div class="span8 offset2" style="padding: 40px 20px 0;">
-        <div class="row" style="padding: 40px 0;">
-          <div class="span4">
-            <ul class="thumbnails">
-              <li class="span3">
-                <img src="img/self.JPG" alt="leanucci" class="mugshot"/>
+<body>
+  <div class="row">
+    <div class="span8 offset2" style="padding: 40px 20px 0;">
+      <div class="row" style="padding: 40px 0;">
+        <div class="span4">
+          <ul class="thumbnails">
+            <li class="span3">
+              <img src="img/self.JPG" alt="leanucci" class="mugshot"/>
+            </li>
+          </ul>
+        </div>
+        <div class="span4">
+          <p><i class="icon-hand-right"> </i> You have successfully reached Leandro Marcucci<span style="color: red"> &para;</span></p>
+          <p>I am a photography enthusiast, a sports fan and a geek<span style="color: red"> &para;</span></p>
+          <p>I code for Yeti Media, myself and others<span style="color: red"> &para;</span></p>
+          <p><i class="icon-envelope"> </i> Contact me via leanucci at gmail.com<span style="color: red"> &para;</span></p>
+        </div>
+      </div>
+      <hr />
+      <div class="row" ng-controller="ReposCtrl">
+        <div class="span8">
+          <h2>Repos:</h2>
+            <ul class="unstyled">
+              <li ng-repeat="repo in repos">
+                {{repo.name}}
               </li>
             </ul>
-          </div>
-          <div class="span4">
-            <p><i class="icon-hand-right"> </i> You have successfully reached Leandro Marcucci<span style="color: red"> &para;</span></p>
-            <p>I am a photography enthusiast, a sports fan and a geek<span style="color: red"> &para;</span></p>
-            <p>I code for Yeti Media, myself and others<span style="color: red"> &para;</span></p>
-            <p><i class="icon-envelope"> </i> Contact me via leanucci at gmail.com<span style="color: red"> &para;</span></p>
-          </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>
