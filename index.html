@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
-<html lang="en" ng-app>
+<html lang="en" ng-app="Leanucci">
 <head>
   <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/base.css" />
-  <script src="js/angular-1.0.1.js"></script>
+  <script src="js/angular-1.0.1.min.js"></script>
   <script src="js/controller.js"></script>
   <meta name="name" content="content">
   <script type="text/javascript">
@@ -39,14 +39,15 @@
         </div>
       </div>
       <hr />
-      <div class="row" ng-controller="ReposCtrl">
-        <div class="span8">
+      <div class="row">
+        <div class="span8" ng-controller="ReposCtrl">
           <h2>Repos:</h2>
-            <ul class="unstyled">
-              <li ng-repeat="repo in repos">
-                {{repo.name}}
-              </li>
-            </ul>
+          <dl>
+            <span ng-repeat="repo in repos | ">
+              <dt><a href="http://github.com/leanucci/{{repo.name}}">{{repo.name}}</a></dt>
+              <dd>{{repo.description | default:"no description"}}</dd>
+            </span>
+          </dl>
         </div>
       </div>
     </div>
