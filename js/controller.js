@@ -15,7 +15,7 @@ angular.module("Leanucci", []).
 
 
 function ReposCtrl($scope, $http) {
-  $http.jsonp("https://api.github.com/users/leanucci/repos?callback=JSON_CALLBACK").
+  $http.jsonp("https://api.github.com/users/leanucci/repos?callback=JSON_CALLBACK&type=owner").
     success(function(data) {
       $scope.repos = data.data;
     });

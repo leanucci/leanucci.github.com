@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" ng-app="Leanucci">
+<html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/base.css" />
@@ -39,12 +39,12 @@
         </div>
       </div>
       <hr />
-      <div class="row">
-        <div class="span8" ng-controller="ReposCtrl">
-          <h2>Repos:</h2>
+      <div class="row" ng-app="Leanucci">
+        <div class="span5" ng-controller="ReposCtrl">
+          <h3>Repos</h3>
           <dl>
-            <span ng-repeat="repo in repos | ">
-              <dt><a href="http://github.com/leanucci/{{repo.name}}">{{repo.name}}</a></dt>
+            <span ng-repeat="repo in repos | filter:{fork:false}">
+              <dt><a href="{{repo.html_url}}">{{repo.name}}</a></dt>
               <dd>{{repo.description | default:"no description"}}</dd>
             </span>
           </dl>
