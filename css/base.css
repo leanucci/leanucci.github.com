@@ -8,18 +8,15 @@ body h1, h2, h3, h4, h5, h6 {
   font-family: 'Arial';
 }
 
-hr {
-  border-top: 1px solid #d4ebf6;
+.container {
+  box-shadow: 0 -20px 20px #333;
+  padding: 50px 0;
 }
-
 .footer {
   height: 400px;
   background-color: #333;
-  color: #EEE;
-  margin-top: 25px;
+  color: #AAA;
   margin-left: 0px;
-  border-left: 45px solid #222;
-  border-right: 45px solid #222;
 }
 
 .footer .column {
@@ -28,8 +25,43 @@ hr {
   padding: 15px 0 0 20px;
 }
 
-.border {border-right: 1px solid #555;}
+.profile {
+  height: 297px;
+  padding-left: 30px;
+}
+
+.extract {
+  margin-top: 45px;
+}
+
+.extract h1 {
+  font-family: 'Gill Sans';
+  color: #444;
+  font-size: 35px;
+  line-height: 55px;
+}
+
+.subtext {
+  text-indent: -16px;
+}
+
+.red {
+  color: red;
+}
+
+.border {
+  border-right: 1px solid #555;
+}
+
 .right_border {
   box-shadow: -1px 0 0 rgba(0, 0, 0, .20) inset,
                1px 0 0 rgba(255, 255, 255, .05);
+}
+
+.repos {
+  min-height: 350px;
+}
+
+.row dl {
+  margin-left: 18px;
 }
