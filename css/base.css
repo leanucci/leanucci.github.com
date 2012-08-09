@@ -19,6 +19,17 @@ body h1, h2, h3, h4, h5, h6 {
   margin-left: 0px;
 }
 
+.footer h3 {
+  font-weight: normal;
+}
+
+.unstyled a {
+  color: #AAA;
+  text-decoration: none;
+  font-weight: normal;
+  line-height: 22 px;
+}
+
 .footer .column {
   height: 350px;
   margin-top: 10px;
@@ -54,8 +65,8 @@ body h1, h2, h3, h4, h5, h6 {
 }
 
 .right_border {
-  box-shadow: -1px 0 0 rgba(0, 0, 0, .20) inset,
-               1px 0 0 rgba(255, 255, 255, .05);
+  box-shadow: -1px 0 0 rgba(0, 0, 0, .30) inset,
+               1px 0 0 rgba(255, 255, 255, .1);
 }
 
 .repos {
@@ -65,3 +76,4 @@ body h1, h2, h3, h4, h5, h6 {
 .row dl {
   margin-left: 18px;
 }
+
