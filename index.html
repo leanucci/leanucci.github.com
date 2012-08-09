@@ -19,52 +19,60 @@
   </script>
 </head>
 <body>
-  <div class="row">
-    <div class="span9 offset2" style="padding: 40px 20px 0;">
-      <div class="row">
-        <div class="span3">
-          <ul class="thumbnails">
-            <li>
-              <img src="img/self-vignette02.jpg" alt="leanucci" class="mugshot"/>
-            </li>
-          </ul>
-        </div>
-        <div class="span5" style="height: 297px; padding-left: 30px;">
-          <div style="margin-top: 45px;">
-            <h1 style="font-family: 'Gill Sans'; color: #444; font-size: 35px; line-height: 55px;">
-              Leandro Marcucci
-            </h1>
-            <div style="text-indent: -16px;">
-              <p>
-                <i class="icon-hand-right"></i>
-                You have successfully reached Leandro Marcucci<span style="color: red"> &para;</span>
-              </p>
-              <p>
-                <i class="icon-user"></i>
-                I am a photography enthusiast, a sports fan and a geek<span style="color: red"> &para;</span>
-              </p>
-              <p>
-                <i class="icon-cog"></i>
-                I write code for Yeti Media, myself and others<span style="color: red"> &para;</span>
-              </p>
-              <p>
-                <i class="icon-envelope"></i>
-                Want to hire me? write to leanucci at gmail.com or any of the social networks I participate in<span style="color: red"> &para;</span>
-              </p>
-            </div>
+  <div class="container" style="box-shadow: 0 -20px 20px #333; padding: 50px 0;">
+    <div class="row">
+      <div class="span3 offset2">
+        <ul class="thumbnails">
+          <li>
+            <img src="img/self-vignette02.jpg" alt="leanucci" class="mugshot"/>
+          </li>
+        </ul>
+      </div>
+      <div class="span5" style="height: 297px; padding-left: 30px;">
+        <div style="margin-top: 45px;">
+          <h1 style="font-family: 'Gill Sans'; color: #444; font-size: 35px; line-height: 55px;">
+            Leandro Marcucci
+          </h1>
+          <div style="text-indent: -16px;">
+            <p>
+              <i class="icon-hand-right"></i>
+              You have successfully reached Leandro Marcucci<span style="color: red"> &para;</span>
+            </p>
+            <p>
+              <i class="icon-user"></i>
+              I am a photography enthusiast, a sports fan and a geek<span style="color: red"> &para;</span>
+            </p>
+            <p>
+              <i class="icon-cog"></i>
+              I write code for Yeti Media, myself and others<span style="color: red"> &para;</span>
+            </p>
+            <p>
+              <i class="icon-envelope"></i>
+              Want to hire me? write to leanucci at gmail.com or any of the social networks I participate in<span style="color: red"> &para;</span>
+            </p>
           </div>
         </div>
       </div>
-      <div class="row" ng-app="Leanucci">
-        <div class="span4 border" ng-controller="ReposCtrl">
-          <h3>My public repositories</h3>
-          <dl style="margin-left: 8px;">
-            <span ng-repeat="repo in repos">
-              <dt><h4><a href="{{repo.html_url}}">{{repo.name}}</a></h5></dt>
-              <dd>{{repo.description | default:"no description"}}</dd>
-            </span>
-          </dl>
-        </div>
+    </div>
+    <div class="row" ng-app="Leanucci">
+      <div class="span4 border offset2" ng-controller="ReposCtrl">
+        <h3>My public repositories</h3>
+        <dl style="margin-left: 8px;">
+          <span ng-repeat="repo in repos">
+            <dt><h4><a href="{{repo.html_url}}">{{repo.name}}</a></h5></dt>
+            <dd>{{repo.description | default:"no description"}}</dd>
+          </span>
+        </dl>
+      </div>
+      <div class="span5">
+        <h3>Other ways to contact me</h3>
+        <ul class="unstyled">
+          <li><a href="http://facebook.com/leanucci.ar/" target="_blank">Facebook</a></li>
+          <li><a href="http://twitter.com/leanucci/" target="_blank">Twitter</a></li>
+          <li><a href="http://www.flickr.com/people/leanucci/" target="_blank">Flickr</a></li>
+          <li>My Skype name is leandromarcucci</li>
+          <li><a href="http://ar.linkedin.com/in/leanucci/" target="_blank">Linkedin</a></li>
+        </ul>
       </div>
     </div>
   </div>
