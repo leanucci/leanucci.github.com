@@ -1,7 +1,7 @@
 body {
   font-size: 13px;
   line-height: 20px;
-  font-family: "Century Gothic";
+  font-family: "Century Gothic", Futura;
 }
 
 body h1, h2, h3, h4, h5, h6 {
@@ -80,4 +80,10 @@ body h1, h2, h3, h4, h5, h6 {
 .mugshot {
   height: 270px;
   width: 270px;
+}
+
+.about dl {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 14px;
 }
