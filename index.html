@@ -58,9 +58,10 @@
       <div class="span4 border offset2 repos" ng-controller="ReposCtrl">
         <h3>My github repositories</h3>
         <dl>
-          <span ng-repeat="repo in repos">
+          <span ng-repeat="repo in repos | orderBy: '-updated_at'">
             <dt><h4><a href="{{repo.html_url}}">{{repo.name}}</a></h5></dt>
             <dd>{{repo.description | default:"no description"}}</dd>
+            <dd>I last worked on this on {{ repo.updated_at | date : "MMMM d, yyyy" }}
           </span>
         </dl>
       </div>
